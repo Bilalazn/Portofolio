@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my portofolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav aria-label="primary navigation">
+                <ul>
+                    <li><a href="#about">about me</a></li>
+                    <li><a href="#skills">skills</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" tabindex="0">
+        <section id="about" class="about-me" class="img" aria-label="about me section">
+            <img src="foto bilal.jpg">
+            <h1 class="ngetik">halo bro,saya <strong> mochammad bilal adzani maulana</strong></h1>
+            <p>
+                selamat datang di situs web portofolio pribadi saya! saya adalah seorang<strong> siswa smk plus pelita nusantara</strong>
+                yang senang membuat aplikasi web menggunakan <strong>HTML,CSS dan Javascript</strong>.
+            </p>
+            <p>saya percaya bahwa teknologi adalah alat penting untuk membngun masa depan pendidikan yang lebih baik</p>
+        </section>
+    </main>
+
+    <section id="skils" aria-label="skills section">
+        <h2> skills</h2>
+        <div class="skills-list" role="list">
+            <span class="skill" role="listinem"> 🔥HTML5</span>
+            <span class="skill" role="listinem"> 🎨CSS3</span>
+            <span class="skill" role="listinem"> ⚙️Javascript</span>
+            <span class="skill" role="listinem"> 📱Responsive design</span>
+            <span class="skill" role="listinem"> 🔧Git & Github</span>
+            <span class="skill" role="listinem"> 📦Bootstrap</span>
+        </div>
+    </section>
+
+    <section id="projects" aria-label="projects section">
+        <h2>projects</h2>
+        <div class="projects-list">
+
+            <article class="projects-item" tabindex="0">
+                <h3>🎯 portofolio website</h3>
+                <p>
+                    website pribadi yang menampilkan profil, keterampilan, dan proyek. dibangun menggunakan HTML, CSS, dan Javascript.
+                </p>
+                <a href="webb/index.html" class="projects-link" target="_blank" rel="noopener">🔗lihat project</a>
+            </article>
+
+            <article class="projects-item" tabindex="0">
+                <h3>📄 to-do list app</h3>
+                <p>
+                    aplikasi daftar tugas interaktif untuk menambah, menghapus, dan menandai tugas sebagai selesai.
+                </p>
+                <a href="todo/todo.html" class="projects-link" target="_blank" rel="noopener">🔗lihat project</a>
+            </article>
+
+            <article class="projects-item" tabindex="0">
+                <h3>❓quiz game</h3>
+                <p>
+                    game kuis sederhana dengan pertanyaan pilihan ganda dan sistem penilaian. dibuat dengan Javascript
+                </p>
+                <a href="quiz/quiz.html" class="projects-link" target="_blank" rel="noopener">🔗lihat project</a>
+            </article>
+        </div>
+    </section>
+
+    <section id="contact" aria-label="contact section">
+        <h2>📫 contact me</h2>
+        <form id="contac-from" novalidate>
+
+            <label for="name">nama lengkap</label>
+            <input type="text" id="name" name="name" placeholder="nama anda" aria-label="nama anda" required />
+            <div class="error" id="name-error"></div>
+            
+            <label for="email">email</label>
+            <input type="email" id="email" name="email" placeholder="email anda" aria-label="email anda" required />
+            <div class="error" id="email-error"></div>
+
+            <label for="message">pesan</label>
+            <textarea type="message" id="message" name="message" rows="4" placeholder="tulis pesan anda" aria-label="pesan anda" required></textarea>
+            <div class="error" id="name-error"></div>
+
+            <button type="submit" aria-label="kirim pesan"> kirim pesan</button>
+            <p class="success-msg" id="success-message" aria-live="polite"></p>
+        </form>
+    </section>
+
+    <footer>
+        &copy; 2025 mochammad bilal adzani maulana SMK Penus
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
